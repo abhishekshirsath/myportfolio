@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e960477a08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" clss="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>Abhishek</span><br> From Pune, India.</h1>
+            </div>
+        </div>
+    </div>
+    <!--About Section--> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Results-driven and detail-oriented developer with two years of experience in designing, implementing, and optimizing code. 
+                        Adept at problem-solving and troubleshooting to ensure code robustness and functionality. 
+                        Quick learner, adaptable to new technologies, and committed to continuous growth in the ever-evolving field of development. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experienced</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C, C++, Java, Python</li>
+                            <li><span>Web Framework</span><br>Spring MVC, SpringBoot, Hibernate</li>
+                            <li><span>Other</span><br>MATLAB, Git, Junit</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Developer - <b>Digitate, TCS</b> (Aug 2023 - Present) </span><br>
+                                ●	Led the end-to-end development of critical use cases, actively participating in requirements gathering, design, implementation, and testing phases.<br>
+                                ●	Successfully integrated use cases into the production environment, overseeing the entire deployment process to ensure a smooth transition from development to live operation.<br>
+                                ●	Collaborated with cross-functional teams, including DevOps and IT operations, to optimize deployment processes, reduce downtime, and enhance the overall efficiency of production releases.<br>
+                            </li>
+
+                            <li><span>Developer - <b>TCS</b> (Dec 2021 - July 2023)</span><br>
+                                ●	Developed and maintained scripts for reduced processing time, improved accuracy and enhanced functionality. <br>
+                                ●	Collaborated with cross-functional teams to understand project requirements, design custom solutions, and deliver high-quality code on time. <br>
+                                ●	Debugging to identify and rectify issues, ensuring smooth and efficient script execution.<br>
+                            </li>
+                            <!-- <li><span>2016-2017</span><br>Building Android apps</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Master of Computer Application | CGPA – 7.85</li>
+                            <li><span>2021</span><br>BSc Comp. Science | Score – 86.47%</li>
+                            <li><span>2018</span><br>HSC Examination | Score - 72%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -----portfolio -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/JavaProgramming.jpeg" alt="">
+                <div class="layer">
+                    <h3>Programming In Java</h3>
+                    <!-- <p>The appp connect U to the talented people around the world.
+                        Download it from play store
+                    </p> -->
+                    <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Spring_MVC.jpg" alt="">
+                <div class="layer">
+                    <h3>Spring MVC</h3>
+                    <!-- <p>The appp connect U to the talented people around the world.
+                        Download it from play store
+                    </p> -->
+                    <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Spring_Boot.jpg" alt="">
+                <div class="layer">
+                    <h3>Spring Boot</h3>
+                    <!-- <p>The appp connect U to the talented people around the world.
+                        Download it from play store
+                    </p> -->
+                    <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/abhishekshirsath/myCertifications.git" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Services -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="services-list">
+            <div>
+                <!-- <i class="fa-brands fa-java"></i> -->
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Application</h2>
+                <p>Developed an simple web application using Java, Spring MVC & Spring Boot.</p>
+                <a href="https://github.com/abhishekshirsath/Springboot_tutorial.git">Show More</a>
+            </div>
+
+            <div>
+                <!-- <i class="fa-sharp fa-solid fa-crop"></i> -->
+                <i class="fa-solid fa-database"></i>
+                <h2>Backend development</h2>
+                <p>Designed an simple web application with Spring Data Jpa, Hibernate using MySQL.</p>
+                <a href="https://github.com/abhishekshirsath/HibernateAndJpaWithSpringboot.git">Show More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>RESTful web_services</h2>
+                <p>Built an simple RESTful web_services with Spring_Boot.</p>
+                <a href="https://github.com/abhishekshirsath/Simple_REST_API_with_SpringBoot.git">Show More</a>
+            </div>
+        </div>
+        <a href="https://github.com/abhishekshirsath?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"> </i>abhishekshirsath289@gmail.com</p>
+                <p><i class="fa-solid fa-phone"> </i>+91 8805788752</p>
+                <div class="social-icons">
+                    <a href="https://github.com/abhishekshirsath"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-shirsath-115359216/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Abhishek_Shirsath_Resume.pdf" download class="btn btn2">Downlaod CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved.</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzG9m85RJs5Ya0KNaSxg9DNRXuKr_GHp4J9LE14sWw0VYUnCg04ddf52F8z3Y4dP6z/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
